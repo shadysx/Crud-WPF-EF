@@ -1,0 +1,20 @@
+﻿<Window x:Class="PL.DoctorManagament"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL"
+        mc:Ignorable="d"
+        Title="DoctorManagament" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="gridDoctors" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Button Content="Add Doctor" Click="BtnAddDoctor_Click" HorizontalAlignment="Left" Margin="137,376,0,0" VerticalAlignment="Top" Height="18"/>
+        <TextBox x:Name="tbId" HorizontalAlignment="Left" Margin="10,292,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96" RenderTransformOrigin="0.55,1.903"/>
+        <TextBox x:Name="tbName" HorizontalAlignment="Left" Margin="10,337,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96"/>
+        <TextBox x:Name="tbSpec" HorizontalAlignment="Left" Margin="10,376,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Id" HorizontalAlignment="Left" Margin="10,261,0,0" VerticalAlignment="Top"/>
+        <Label Content="Name&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,310,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.62,2.295"/>
+        <Label Content="Spec&#xA;" HorizontalAlignment="Left" Margin="10,352,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.62,2.295"/>
+
+    </Grid>
+</Window>
